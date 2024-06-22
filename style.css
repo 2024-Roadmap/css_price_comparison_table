@@ -20,3 +20,72 @@ body {
   align-items: center;
   font-family: var(--body-font-family);
 }
+
+.price-comparison {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin: 1rem;
+}
+
+.price-column {
+  background-color: white;
+  box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+  padding: 2rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 275px;
+  border-radius: 8px;
+}
+
+.price-column.popular {
+  background-color: var(--accent-color);
+  color: white;
+  box-shadow: 0 7px 30px rgba(52, 31, 97, 0.3);
+  margin: -1.5rem 0;
+  padding: 3.5rem 2rem;
+}
+
+.price-column:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.price-column:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.price-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  font-size: 3.5rem;
+}
+
+.dollar-sign {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+.per-month {
+  font-size: 0.75rem;
+  align-self: flex-end;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+
+.plan-name {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
